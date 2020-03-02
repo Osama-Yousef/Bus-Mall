@@ -1,0 +1,140 @@
+body {
+    background: radial-gradient(#dbffe1, #fff) fixed;
+    color: #0e2805;
+  }
+  h1{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  h2{
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  
+
+  header {
+    background: #c3f3cb;
+    width: 100%;
+    padding: 17px 0;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+    margin-bottom: 15px;
+  }
+
+  section  {
+    display: inline-block;
+    
+    margin-top: 15px;
+    text-align:center;
+}
+
+  li{
+    
+    display: inline-block;
+    vertical-align: middle;
+    color: gray;
+margin-right: 100px;
+}
+
+
+  
+  
+  nav ul li a{
+    text-decoration: none;
+  }
+
+  main{
+    margin-top: 100px;
+    margin-right: 150px;
+    margin-left: 150px;
+    margin-bottom: 100px;
+}
+
+#left_product{
+width: 250px;
+height: 250px;
+
+border-radius: 30px; 
+border-style: solid;
+
+}
+#middle_product{
+    width: 250px;
+    height: 250px;
+
+    border-radius: 30px;
+    border-style: solid;
+}
+#right_product{
+    width: 250px;
+    height: 250px;
+
+    border-radius: 30px;
+    border-style: solid;
+
+ }
+  
+  main{
+    max-width: 950px;
+    margin: 40px auto;
+    overflow: hidden;
+  }
+  
+  main > *{
+    float:left;
+  }
+  
+ 
+  
+  
+  #product-clicks {
+    padding: 26px 9px 0 0;
+    font-size: 20px;
+    line-height: 1.4;
+  }
+ 
+  
+  img {
+    max-height: 300px;
+    max-width: 100%;
+    margin: 0 auto;
+    cursor: pointer;
+    margin: 15px;
+  }
+  #all_products {
+    text-align: center;
+  }
+  #all_products img {
+    height: 188px;
+    width: 210px;
+    padding: 0;
+    margin: 15px 0;
+    border: 1px solid #fefffe;
+    box-shadow: 2px 0 12px #043817;
+  }
+  
+  li {
+    display: inline-block;
+    list-style: none;
+    margin: 20px 40px 20px 0px;
+    font-size: 1.2em;
+    
+  }
+  
+  body footer {
+    background: #18ad3155;
+    clear: both;
+    text-align: center;
+    padding: 24px 0;
+    color: #0e2805;
+  }
+  section div {
+    padding: 7px;
+    box-sizing: border-box;
+    float: left;
+    width: 50%;
+  }
