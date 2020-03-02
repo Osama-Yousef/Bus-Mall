@@ -2,6 +2,7 @@
 
 
 
+
 var productsImages = [
   'bag.jpg',
   'banana.jpg',
