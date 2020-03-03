@@ -258,6 +258,7 @@ var middleProductImage = document.querySelector('#middle_product_img');
 
 var groupImageSection = document.getElementById('all_products');
 
+var unique =[];
 
 
 function Product(name) {
@@ -285,21 +286,26 @@ for (var i = 0; i < productsImages.length; i++) {
 
 function render() {
 
+  var leftProduct = Product.all[randomNumber(0, Product.all.length - 1)];
 
-  while (rightProduct === leftProduct || rightProduct === middleProduct || leftProduct === middleProduct) {
+  var rightProduct = Product.all[randomNumber(0, Product.all.length - 1)];
+  var middleProduct = Product.all[randomNumber(0, Product.all.length - 1)];
 
-    var leftProduct = Product.all[randomNumber(0, Product.all.length - 1)];
+  while (rightProduct === leftProduct || rightProduct === middleProduct || leftProduct === middleProduct ||
+    (unique.includes(leftProduct.name))||
+    (unique.includes(rightProduct.name))||
+    (unique.includes(middleProduct.name))) {
 
-    var rightProduct = Product.all[randomNumber(0, Product.all.length - 1)];
-    var middleProduct = Product.all[randomNumber(0, Product.all.length - 1)];
-    leftProduct.views++;
-    middleProduct.views++;
-    rightProduct.views++;
-    console.log(leftProduct);
+      var leftProduct = Product.all[randomNumber(0, Product.all.length - 1)];
 
+      var rightProduct = Product.all[randomNumber(0, Product.all.length - 1)];
+     
+      var middleProduct = Product.all[randomNumber(0, Product.all.length - 1)];
+   
 
   }
 
+  
 
   leftProductImage.setAttribute('src', leftProduct.urlImage);
   leftProductImage.setAttribute('alt', leftProduct.name);
@@ -313,6 +319,13 @@ function render() {
   middleProductImage.setAttribute('src', middleProduct.urlImage);
   middleProductImage.setAttribute('alt', middleProduct.name);
   middleProductImage.setAttribute('title', middleProduct.name);
+
+  leftProduct.views++;
+  middleProduct.views++;
+  rightProduct.views++;
+  console.log(leftProduct);
+  unique=[];
+  unique.push(leftProduct.name,rightProduct.name,middleProduct.name);
 
 
 }
@@ -411,9 +424,6 @@ function List() {
     }
   });
 }
-
-
-
 
 
 
