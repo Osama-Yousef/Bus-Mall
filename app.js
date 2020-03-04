@@ -434,7 +434,6 @@ var rightProductImage = document.querySelector('#right_product_img');
 var middleProductImage = document.querySelector('#middle_product_img');
 
 var groupImageSection = document.getElementById('all_products');
-getTheList();
 var unique =[];
 
 
@@ -453,35 +452,10 @@ Product.all = [];
 for (var i = 0; i < productsImages.length; i++) {
   new Product(productsImages[i]);
 }
+getItem();
 
 
 
-
-var storedViews=[0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0];
-function updating(){
-for(var i=0 ; i<Product.all.length ; i++){
-
-  storedViews[i]=storedViews[i]+Product.all[i].views;
-  Product.all[i].views=storedViews[i];
-
-}
-
-localStorage.setItem(  'listAppear'   , JSON.stringify(Product.all)   );
-
-
-}
-
-
-function getTheList(){
-
-
-var theList = localStorage.getItem('listAppear');
-Product.all =JSON.parse(theList);
-
-
-}
-
-render();
 
 function render() {
 
@@ -522,6 +496,8 @@ function render() {
   leftProduct.views++;
   middleProduct.views++;
   rightProduct.views++;
+  setItem();
+
   console.log(leftProduct);
   unique=[];
   unique.push(leftProduct.name,rightProduct.name,middleProduct.name);
@@ -552,12 +528,15 @@ groupImageSection.addEventListener('click', function (e) {
 
 
         if (event.target.title === Product.all[i].name) {
-
+          
           Product.all[i].votes++;
+
         }
       }
-
+      
       render();
+
+     
 
     }
 
@@ -566,7 +545,6 @@ groupImageSection.addEventListener('click', function (e) {
  
   if (count === 25) {
     
-    updating();
     List();
 
     
@@ -632,32 +610,24 @@ function List() {
     }
   });
 }
-/*
-//var all=[0 ,0 ,0 ,0 ,0 ,0,0];
-function updating(){
-//all[i]+=Product.all[i].views;
 
-//Product.all[i].views=all[i];
-
-  var theList =JSON.stringify(Product.all);
-  localStorage.setItem("listAppear" , theList);
+function setItem(){
+  var theList = JSON.stringify(Product.all);
+  localStorage.setItem( 'listAppear', theList);
+  
 }
 
-function getTheList(){
-var theList =localStorage.getItem("listAppear");
 
-   Product.all =JSON.parse(theList);
-   if (theList){
+function getItem(){
 
-
-     console.log('saving user' );
-     Product.all = theList ;
+  var theList=JSON.parse(localStorage.getItem('listAppear'));
+  if(theList===null){
+   
+  }else{
+    Product.all = theList;
   }
 }
-function clearLocalStorage(){
-localStorage.clear();
- Product.all = [];
 
-render();
-getTheList();
-*/
+
+
+
