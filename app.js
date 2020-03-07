@@ -1,4 +1,8 @@
 /*
+
+// this is the code for the first lab in this week 
+
+
 'use strict';
 
 
@@ -179,6 +183,7 @@ function List() {
 
 /*
 
+// this is the code for the second  lab in this week 
 
 'use strict';
 
@@ -391,6 +396,8 @@ function List() {
 }
 
 */
+
+// this is the code for the third lab in this week and it contains everything in javascript for Bus-Mall and previous labs 
 
 'use strict';
 

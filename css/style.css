@@ -1,111 +1,68 @@
+
+/* adding the final touches in css for our app */
+
+
 body {
-    background: radial-gradient(#dbffe1, #fff) fixed;
-    color: #0e2805;
-  }
-  h1{
-    font-size: 24px;
-    font-weight: bold;
-    margin: 10px 0;
-  }
-  h2{
-    font-size: 18px;
-    font-weight: bold;
-  }
-
-  header {
-    background: #c3f3cb;
-    width: 100%;
-    padding: 17px 0;
-    text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 9999;
-    margin-bottom: 15px;
-  }
-
-  section  {
-    display: inline-block;
-    
-    margin-top: 15px;
-    text-align:center;
+  background: radial-gradient(#dbffe1, #fff) fixed;
+  color: #0e2805;
 }
-
-  li{
-    
-    display: inline-block;
-    vertical-align: middle;
-    color: gray;
+header ul li p {
+  padding: 3px;
+  float: left;
+  font-size: 38px;
+  color: gray;
 margin-right: 100px;
 }
 
+#listAppear h1 {
+color: crimson;
+font-size: 25px;
+margin-bottom: 10px;
+}
 
-  
-  
-  nav ul li a{
-    text-decoration: none;
-  }
 
-  main{
-    margin-top: 100px;
-    margin-right: 150px;
-    margin-left: 150px;
-    margin-bottom: 100px;
+header {
+  background: #c3f3cb;
+  width: 100%;
+  padding: 17px 0;
+  position: sticky;
+  top: 0;
+  z-index: 9999;
+  margin-bottom: 15px;
+  border: 2px solid #FFC981;
+}
+
+h2{
+  font-size: 31px;
+  font-weight: bolder;
+  font-family: cursive;
 }
 
 #left_product{
-width: 250px;
-height: 250px;
-
-border-radius: 30px; 
-border-style: solid;
-
-}
-#middle_product{
-    width: 250px;
-    height: 250px;
-
-    border-radius: 30px;
-    border-style: solid;
-}
-#right_product{
-    width: 250px;
-    height: 250px;
-
-    border-radius: 30px;
-    border-style: solid;
-
- }
+  width: 200px;
+  height: 220px;
   
-  main{
-    max-width: 950px;
-    margin: 40px auto;
-    overflow: hidden;
+  }
+  #middle_product{
+    width: 200px;
+    height: 265px;
+  }
+  #right_product{
+    width: 200px;
+    height: 220px;
+   }
+
+  
+    img {
+      max-height: 175px;
+      max-width: 200px;
+      margin: 0 auto;
+      cursor: pointer;
+      margin: 3px;
   }
   
-  main > *{
-    float:left;
-  }
-  
- 
   
   
-  #product-clicks {
-    padding: 26px 9px 0 0;
-    font-size: 20px;
-    line-height: 1.4;
-  }
- 
-  
-  img {
-    max-height: 300px;
-    max-width: 100%;
-    margin: 0 auto;
-    cursor: pointer;
-    margin: 15px;
-  }
-  #all_products {
-    text-align: center;
-  }
   #all_products img {
     height: 188px;
     width: 210px;
@@ -114,26 +71,105 @@ border-style: solid;
     border: 1px solid #fefffe;
     box-shadow: 2px 0 12px #043817;
   }
-  
-  li {
-    display: inline-block;
-    list-style: none;
-    margin: 20px 40px 20px 0px;
-    font-size: 1.2em;
-    
-  }
-  
-  body footer {
-    background: #18ad3155;
-    clear: both;
+
+  #all_products {
     text-align: center;
-    padding: 24px 0;
-    color: #0e2805;
   }
-  section div {
-    padding: 7px;
-    box-sizing: border-box;
-    float: left;
-    width: 50%;
-  }
+
+  section  {
+    display: inline-block;
+    
+    text-align:center;
+    margin-left: 93px;
+    display: inline-block;
+    text-align: center;
+    margin-top: 25px;
+    margin-right: 200px;
+    margin-bottom: 34px;
+}
+main {
+  height: 2600px;
+}
+
+#introduction p {
+  font-size: 16px;
+  font-family: cursive;
+  color: red;
+  padding-bottom: 0px;
+}
+#listAppear {
+  padding-top: 10px;
+  margin-top: 4%;
+  margin-left: 0%;
+  width: 300px;
+  border-style: solid;
+  padding-bottom: 8%;
+  float: left;
+  border: 5px dotted #FFC981;
+  border-color: mediumaquamarine;
+  padding-top: 3%;
+  margin-right: 86px;
+  margin-top: 10px;
+  font-size: small;
+}
+
+#listAppear ul li{
+display: block;
+}
+
+
+#product-clicks {
+  padding: 26px 9px 0 0;
+  font-size: 20px;
+  line-height: 1.4;
+}
+
+
+#lorem {
+  margin-top: 18%;
+  margin-left: 11%;
+  text-align: center;
+  width: 598px;
+  height: 732px;
+  border: 6px dotted gray;
+  color: navy;
+  position: absolute;
+  top: 75%;
+  left: 25%;
+  font-size: x-large;
+}
+
+#barchart{
+width: 90%;
+top: 22%;
+right: 30%;
+z-index: -1;
+left:30%;
+
+}
+
+li {
+display: inline-block;
+list-style: none;
+margin: 20px 40px 20px 0px;
+font-size: 1.2em;
+
+}
+
+section div {
+padding: 7px;
+box-sizing: border-box;
+float: left;
+width: 50%;
+}
+
+
+
+body footer {
   
+  background: #18ad3155;
+  clear: both;
+  text-align: center;
+  padding: 24px 0;
+  color: #0e2805;
+}

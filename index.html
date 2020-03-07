@@ -1,97 +1,106 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
+
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Image Event lab</title>
+  <title>Bus Mall</title>
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
 
 </head>
+
 <body>
-  
-    <header>
-        <!-- here is the nav bar box -->
-        <nav> 
-            <ul>
-                <!-- the logo will be on left of nav bar --> 
-                <li><img style=" margin-right: 610px;
-                    " src="https://via.placeholder.com/200x70" ></li>
-                <li><p >Trendy products</p></li>
 
-                <li><p >Home</p></li>
-                <li><p>Pick your order</p></li>
-                
-                
-            </ul>
-        </nav>
-        <!-- end of the nav bar  box-->       
-    </header>
-  
-  
-  
-  
-  
-  
-  
-  
-  
-    
+  <header>
+
+    <ul>
+      <li><img src="https://via.placeholder.com/200x70"></li>
+      <li>
+        <p>Trendy Products</p>
+      </li>
+    </ul>
+
+  </header>
+
   <main>
+
     <section>
-      <ul id="product-clicks">
-
-      </ul>
+      <ul id="product-clicks"></ul>
     </section>
+
+
     <section id="all_products">
-      <h1>We've a few pictures for you!</h1>
-      <br>
-      <br>
-      <p>this is voting about the photos that you liked from our store images choose one from three images each time :</p>
-<br>
-<br>
-      <p>each time choose one from the three images , you have 25 rounds</p>
 
-      <section>
+      <div id="listAppear">
+        <h1>Results</h1>
+      </div>
 
-        <div id="left_product"> 
-            <img id="left_product_img" src="" alt="">
-          </div>
-    
-          <div id="right_product">
-            <img id="right_product_img" src="" alt="">
-          </div>
-    
-          <div id="middle_product"> 
-            <img id="middle_product_img" src="" alt="">
-          </div>
+
+      <div id="introduction">
+
+        <h2>We've a few pictures for you!</h2>
+        <br>
+        <br>
+        <p>this is voting about the photos that you liked from our store images </p>
+        <br>
+        <br>
+        <p>each time choose one from the three images , you have 25 rounds</p>
+
+      </div>
+
+      <div id="left_product">
+        <img id="left_product_img" src="" alt="">
+      </div>
+
+      <div id="right_product">
+        <img id="right_product_img" src="" alt="">
+      </div>
+
+      <div id="middle_product">
+        <img id="middle_product_img" src="" alt="">
+      </div>
+
+      <div id="paragraph">
+
+        <p id="lorem">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Numquam assumenda facilis asperiores
+          amet quis esse repellat nisi hic. Aliquid odio, aliquam dignissimos dolore illo numquam? Voluptatibus
+          doloremque corporis delectus nemo quidem laborum odio velit similique nesciunt assumenda, laboriosam officia
+          sunt hic quo dolorum excepturi rem, perspiciatis exercitationem illum veniam placeat quos asperiores, quasi a.
+          Ipsum quam soluta impedit officiis ullam debitis veritatis temporibus fugit deleniti atque tempora molestiae,
+          dolorem tempore voluptatem aliquid ex minus, dolores, magnam nihil nisi. Dolorem modi atque blanditiis
+          temporibus quo quidem quia, commodi maiores minima aut beatae a veniam ipsam soluta ex optio explicabo? Sed
+          vitae laborum fugit quis perspiciatis eaque reiciendis illo rerum, nulla rem quas, similique ut odio. Pariatur
+          id aspernatur dignissimos. Deleniti ipsa sapiente consequuntur mollitia facilis sunt voluptas. Aspernatur
+          commodi odit consectetur impedit, provident quae deserunt consequatur sunt voluptatem exercitationem ut non
+          aliquid recusandae aliquam. At maiores quae laborum, placeat odit nostrum accusamus minus dolore, autem,
+          corrupti mollitia doloribus! Maxime distinctio dolor sit fuga excepturi tempora iste! Vel vero quo ipsa
+          necessitatibus illo perspiciatis labore similique ex itaque. Amet fuga illo perspiciatis quam voluptas est
+          veniam. Unde, adipisci eius nemo quae quia esse aliquid numquam, a voluptatem illum ratione, sit beatae
+          magnam?</p>
+
+      </div>
+
+
+
     </section>
 
 
-  
-    
-
-   
-<section>
-    <div id="listAppear"></div>
-    <div>
-
-</section>
-<canvas id="myProducts" width="500" height="500"></canvas>
+    <div id="barchart">
+<canvas id="myProducts" width="100" height="100"></canvas>
+    </div>
 
   </main>
-  <footer>
-      
-      <p>@copy right for our store</p>
-    </div>
-  </footer>
-  
 
-  </ul>
+  <footer>
+ <p>@copy right for Bus Mall Store</p>
+  </footer>
+
   <script src="https://cdn.jsdelivr.net/npm/chart.js@2.9.3/dist/Chart.min.js"></script>
 
   <script src="app.js"></script>
+
 </body>
 </html>
-
